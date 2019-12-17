@@ -1,0 +1,45 @@
+grant codeBase "${app.jar.base}/batik-anim.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-awt-util.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-bridge.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-codec.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-constants.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-dom.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-ext.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-extension.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-gui-util.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-gvt.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-i18n.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-parser.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-script.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-squiggle-ext.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-svg-dom.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-svgbrowser.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-svggen.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-svgrasterizer.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-swing.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-test.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-transcoder.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-util.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-xml.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-css.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-rasterizer-ext.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-rasterizer.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-slideshow.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-squiggle.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-svgpp.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/batik-ttf2svg.jar" { permission java.security.AllPermission; };
+
+grant codeBase "${app.jar.base}/../xml-commons-apis.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/../xml-commons-apis-ext.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/../xmlgraphics-commons.jar" { permission java.security.AllPermission; };
+grant codeBase "${app.jar.base}/../jai_imageio.jar" { permission java.security.AllPermission; };
+
+grant codeBase "${app.jar.base}/../rhino.jar" {
+  permission java.lang.RuntimePermission "createClassLoader";
+  permission java.net.SocketPermission "*", "listen, connect, resolve, accept";
+  permission java.lang.RuntimePermission "accessDeclaredMembers";
+  permission java.util.PropertyPermission "org.mozilla.javascript.JavaAdapter", "read";
+  permission java.util.PropertyPermission "org.mozilla.javascript.JavaAdapterClassName", "read";
+  permission java.util.PropertyPermission "rhino.stack.style", "read";
+  permission java.io.FilePermission "<<ALL FILES>>", "read";
+};
