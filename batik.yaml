@@ -1,0 +1,4 @@
+version_control: svn
+src_repo: http://svn.apache.org/repos/asf/xmlgraphics/batik/trunk
+tag_prefix: "^batik-"
+seperator: "_"
