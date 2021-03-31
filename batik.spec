@@ -1,7 +1,7 @@
-%global classpath batik:rhino:xml-commons-apis:xml-commons-apis-ext:xmlgraphics-commons:jai_imageio
+%global classpath batik:xml-commons-apis:xml-commons-apis-ext:xmlgraphics-commons
 Name:           batik
 Version:        1.10
-Release:        5
+Release:        6
 Summary:        Batik is an inline templating engine for CoffeeScript
 License:        Apache-2.0 and W3C and MPL-1.1 and GPL-2.0-or-later and Apache-1.1
 URL:            https://xmlgraphics.apache.org/batik/
@@ -122,6 +122,9 @@ cp -a samples %{buildroot}/%{_datadir}/%{name}/
 %doc CHANGES MAINTAIN README NOTICE
 
 %changelog
+* Wed Mar 31 2021 lingsheng <lingsheng@huawei.com> - 1.10-6
+- Remove unneeded rhino and jai_imageio in classpath
+
 * Thu Mar 11 2021 wangyue <wangyue92@huawei.com> - 1.10-5
 - fix CVE-2020-11987
 
